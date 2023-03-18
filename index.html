@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+
+    <!-- Linking External Files -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="wrapper" class="bg-dark min-vh-100">
+
+        <!-- Side Nav Section -->
+        <nav class="position-fixed d-flex vh-100 z-2">
+            <div id="navList" class="d-flex flex-column justify-content-between text-bg-dark p-4 position-relative">
+                <div class="h-50 position-relative overflow-hidden">
+                    <ul class="list-unstyled position-absolute">
+                        <li class="py-2 pointer" id="searchBtn">Search</li>
+                        <li class="py-2 pointer" id="categoriesBtn">Categories</li>
+                        <li class="py-2 pointer" id="areaBtn">Area</li>
+                        <li class="py-2 pointer" id="ingredientsBtn">Ingredients</li>
+                        <li class="py-2 pointer" id="contactUsBtn">Contact Us</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a href="" class="text-white text-decoration-none">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" class="text-white text-decoration-none">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-white text-decoration-none">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    <p>Copyright Â© 2019 <br> All Rights Reserved.</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-between align-items-center text-bg-light py-4 px-2">
+                <img src="imgs/logo.png" alt="" class="img-fluid" width="50">
+
+                <i id="toggleBtn" class="fas fa-align-justify fa-2x pointer"></i>
+
+                <div>
+                    <a href="" class="text-black text-decoration-none">
+                        <i class="fas fa-globe d-block"></i>
+                    </a>
+                    <a href="" class="text-black text-decoration-none">
+                        <i class="fas fa-share-nodes d-block mt-2"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Search Section -->
+        <section id="searchSection" class="hidden py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="name" placeholder="Search By Name" name="name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="firstLetter" placeholder="Search By First Letter" name="firstLetter" maxlength="1">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading Screen -->
+        <section id="loadingScreen" class="position-fixed top-0 bottom-0 start-0 end-0 z-3">
+            <div class="d-flex justify-content-center align-items-center text-white h-100">
+                <i class="fa fa-spinner fa-spin fa-5x"></i>
+            </div>
+        </section>
+
+        <!-- Main Section -->
+        <section id="mainSection">
+            <div class="container py-4">
+                <div class="row g-3">
+
+                </div>    
+            </div>    
+        </section>  
+
+    </div>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>

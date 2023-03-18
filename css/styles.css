@@ -1,0 +1,19 @@
+.hidden {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.card .overlay {
+    transition:  all 0.5s;
+}
+
+.card:hover .overlay {
+    top: 0 !important;
+}
