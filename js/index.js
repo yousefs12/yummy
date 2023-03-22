@@ -223,6 +223,10 @@ async function searchCategory(value) {
                     </div>`
     }
     $("#mainSection .row").html(container);
+    $(".meal .stretched-link").click(function (e) {
+        e.preventDefault()
+        searchById($(e.target).attr("data-meal-id"));
+    });
     $("#loadingScreen").hide()
 }
 
@@ -244,6 +248,10 @@ async function searchArea(value) {
                     </div>`
     }
     $("#mainSection .row").html(container);
+    $(".meal .stretched-link").click(function (e) {
+        e.preventDefault()
+        searchById($(e.target).attr("data-meal-id"));
+    });
     $("#loadingScreen").hide()
 }
 
@@ -265,6 +273,10 @@ async function searchIngredient(value) {
                     </div>`
     }
     $("#mainSection .row").html(container);
+    $(".meal .stretched-link").click(function (e) {
+        e.preventDefault()
+        searchById($(e.target).attr("data-meal-id"));
+    });
     $("#loadingScreen").hide()
 }
 
